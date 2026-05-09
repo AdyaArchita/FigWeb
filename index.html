@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplifying Compliance for Research Analysts</title>
+    <meta name="description" content="Expert compliance solutions tailored for independent research analysts and firms. Ensure regulatory requirements are met with ease.">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+            <div class="logo">
+                <img src="assets/Logo.png" alt="Compliance Logo">
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+
+            <button class="btn-contact">
+                <img src="assets/Contact-icon.png" alt="Phone">
+                Contact us
+            </button>
+
+            <!-- Mobile Menu Toggle (Overlay) -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <img src="assets/Menu.png" alt="Menu">
+            </button>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <div class="mobile-menu-header">
+                    <div class="logo">
+                        <img src="assets/Logo.png" alt="Logo">
+                    </div>
+                    <button class="mobile-menu-close" aria-label="Close menu">
+                        <img src="assets/close-icon.png" alt="Close">
+                    </button>
+                </div>
+                <ul class="mobile-nav-links">
+                    <li><a href="#" class="active"><img src="assets/Home.png" alt=""> Home</a></li>
+                    <li><a href="#"><img src="assets/AboutUs.png" alt=""> About Us</a></li>
+                    <li><a href="#"><img src="assets/Our Services.png" alt=""> Our Services</a></li>
+                    <li><a href="#"><img src="assets/Pricing.png" alt=""> Pricing</a></li>
+                    <li><a href="#"><img src="assets/FAQ.png" alt=""> FAQ</a></li>
+                </ul>
+                <div class="mobile-menu-footer">
+                    <button class="btn-contact-mobile">Contact Us</button>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <header class="hero">
+                <div class="hero-bg-ellipse"></div>
+                
+                <div class="hero-content-wrapper">
+                    <!-- Left: Hero Content -->
+                    <div class="hero-text-content">
+                        <h1>Simplifying<br><span class="highlight-compliance">Compliance<img src="assets/underline-Vector.png" class="hero-underline" alt=""></span> For<br>Research Analysts</h1>
+                        <p class="hero-subtext">Stay focused on your insights—we’ll handle the compliance. Our expert solutions ensure your research practices meet every regulatory requirement with confidence and ease</p>
+                        
+                        <ul class="hero-features">
+                            <li><img src="assets/check-sign.png" alt=""> End-to-end compliance support</li>
+                            <li><img src="assets/check-sign.png" alt=""> Regulatory filings made simple</li>
+                            <li><img src="assets/check-sign.png" alt=""> Tailored solutions for independent analysts & firms</li>
+                        </ul>
+                        
+                        <div class="hero-btns">
+                            <button class="btn-primary">Get Started</button>
+                            <button class="btn-secondary">Book a Consultation</button>
+                        </div>
+                    </div>
+
+                    <!-- Right: Hero Visual -->
+                    <div class="hero-visual">
+                        <img src="assets/Banner Image.png" alt="Compliance Banner" class="hero-banner">
+                    </div>
+                </div>
+            </header>
+
+            <!-- Why Compliance Section -->
+            <section class="why-compliance">
+                <div class="compliance-grid">
+                    <!-- Left Column -->
+                    <div class="compliance-col-left">
+                        <img src="assets/Vector1.png" class="compliance-vector-arrows" alt="">
+                        <div class="compliance-heading-wrapper">
+                            <h2>Why <span>Compliance Matters</span><br>For Research Analysts</h2>
+                            <img src="assets/Vector2.png" class="curly-arrow" alt="Curly Arrow">
+                        </div>
+                        <img src="assets/Section2-Image.png" class="compliance-illustration" alt="Compliance Illustration">
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="compliance-col-right">
+                        <p class="compliance-description">In today’s regulatory environment, even a small oversight can lead to penalties, reputational risks, and loss of client trust. We help Research Analysts and firms navigate complex compliance requirements so they can focus on delivering high-quality research without worry.</p>
+                        
+                        <div class="feature-cards-stack">
+                            <div class="feature-card">
+                                <div class="feature-icon-wrapper clarity-icon">
+                                    <img src="assets/Regulatory Clarity.png" alt="Regulatory Clarity">
+                                </div>
+                                <div class="feature-card-content">
+                                    <h3>Regulatory Clarity</h3>
+                                    <p>We decode complex compliance rules into simple, actionable steps.</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon-wrapper hassle-free-icon">
+                                    <img src="assets/Hassle-Free Filings Clarity.png" alt="Hassle-Free Filings Clarity">
+                                </div>
+                                <div class="feature-card-content">
+                                    <h3>Hassle-Free Filings Clarity</h3>
+                                    <p>From registration to ongoing reporting—we manage it end-to-end.</p>
+                                </div>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon-wrapper risk-icon">
+                                    <img src="assets/Risk Protection.png" alt="Risk Protection">
+                                </div>
+                                <div class="feature-card-content">
+                                    <h3>Risk Protection</h3>
+                                    <p>Stay ahead of audits, inspections, and compliance gaps with proactive support.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.mobile-menu-toggle');
+        const menuClose = document.querySelector('.mobile-menu-close');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        const toggleMenu = () => {
+            mobileMenu.classList.toggle('active');
+            if (mobileMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        };
+
+        menuToggle.addEventListener('click', toggleMenu);
+        menuClose.addEventListener('click', toggleMenu);
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.mobile-nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+    </script>
+</body>
+</html>
